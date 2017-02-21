@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Joe Dye</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Joe Dye</h1>
+        <p><a href="mailto:jdye94@gmail.com">jdye94@gmail.com</a></p>
+        <ul>
+          <li><a href="/joseph_dye_resume2016.pdf">Resume</a></li>
+          <li><a href="https://github.com/dyej/">GitHub</a></li>
+        </ul>
+      </header>
+      <section>
+        <%= yield_content :index %>
+      </section>
+      <footer>
+      </footer>
+    </div>
+  </body>
+</html>
