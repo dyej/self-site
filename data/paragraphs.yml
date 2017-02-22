@@ -1,0 +1,10 @@
+paragraphs:
+    -
+        heading: "Hello!"
+        content: "This is where my resume and portfolio work are displayed."
+    -
+        heading: "About Me"
+        content: "I'm a 22 year old software engineer from Columbus, Ohio. I love working on web apps and mobile apps, using and tinkering with Linux, and have plenty of experience with test automation. Some of my hobbies are playing guitar and piano, and indoor gardening."
+    -
+        heading: "What I'm doing now"
+        content: "I am a recent graduate of Ohio State University's Computer Science and Engineering program, and I'm currently working as a Software Developer at Nationwide Insurance."
