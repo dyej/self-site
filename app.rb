@@ -7,8 +7,3 @@ get '/' do
   @paragraph_data = YAML.load_file('data/paragraphs.yml')
   erb :index
 end 
-
-#ERB is just ruby
-# <% @collection.each do |value| %>
-#   <%= value %>
-# <% end %>
