@@ -6,4 +6,8 @@ get '/' do
   @general_data = YAML.load_file('data/general.yml')
   @paragraph_data = YAML.load_file('data/paragraphs.yml')
   erb :index
+end
+
+get '/upload' do
+  erb :upload
 end 
