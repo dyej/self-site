@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title><%= @general_data['name'] %></title>
+    <title><%= @@general_data['name'] %></title>
 
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width">
@@ -10,7 +10,19 @@
   <body>
     <div class="wrapper">
       <header>
-        <%= yield_content :header %>
+        <a href='img/self.jpg'><img id='profile' src='img/self.jpg' /></a>
+        <h1><%= @@general_data['name'] %></h1>
+        <p>
+            <%= %(<a href="mailto:#{@@general_data['email']}">#{@@general_data['email']}</a>) %>
+        </p>
+        <ul>
+            <li>
+                <%= %(<a href="#{@@general_data['resume_file']}">Resume</a>) %>
+            </li>
+            <li>
+                <%= %(<a href="#{@@general_data['github_link']}">Github</a>) %>
+            </li>
+        </ul>
       </header>
       <section>
         <%= yield_content :container %>

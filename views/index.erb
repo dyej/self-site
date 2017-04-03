@@ -1,21 +1,5 @@
-<% content_for :header do %>
-    <a href='img/self.jpg'><img id='profile' src='img/self.jpg' /></a>
-    <h1><%= @general_data['name'] %></h1>
-    <p>
-        <%= %(<a href="mailto:#{@general_data['email']}">#{@general_data['email']}</a>) %>
-    </p>
-    <ul>
-        <li>
-            <%= %(<a href="#{@general_data['resume_file']}">Resume</a>) %>
-        </li>
-        <li>
-            <%= %(<a href="#{@general_data['github_link']}">Github</a>) %>
-        </li>
-    </ul>
-<% end %>
-
 <% content_for :container do %>
-    <% @paragraph_data.each do |paragraph| %>
+    <% @@paragraph_data.each do |paragraph| %>
         <h3>
             <%= paragraph['heading'] %>
         </h3>
