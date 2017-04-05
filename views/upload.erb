@@ -4,4 +4,8 @@
         <input type="file" name="file">
         <input type="submit" value="Submit">
     </form>
+    <form action="/upload" method="post" enctype="multipart/form-data"> 
+      <input type="file" name="images[]" multiple /> 
+      <input type="submit" /> 
+    </form>
 <% end %>
