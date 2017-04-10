@@ -6,7 +6,7 @@ require 'yaml'
 @@paragraph_data = YAML.load_file('data/paragraphs.yml')
 
 configure do
-  set :environment, 'development'
+  set :environment, "development"
 end
 
 get '/' do 
@@ -18,5 +18,6 @@ get '/utils/upload' do
 end
 
 get '/utils/pdf' do
-
+  @num_uploads = 5
+  erb :pdf
 end 

@@ -1,0 +1,12 @@
+<% content_for :container do %>
+    <h1>Upload File</h1>
+    <form action="/save_file" method="POST" enctype="multipart/form-data">
+        <ol>
+            <% @num_uploads.times do |i| %>
+                <li><input type="file" name="file<%= i %>"></li><br>
+            <% end %>
+        </ol>
+        <input type="submit" value="Submit">
+        <input type="submit" value="+">
+    </form>
+<% end %>
