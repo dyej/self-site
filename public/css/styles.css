@@ -1,3 +1,7 @@
+li .nostyle {
+    list-style-type: none;
+}
+
 body {
   background-color: #fff;
   padding:50px;
