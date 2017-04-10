@@ -12,11 +12,11 @@ end
 
 helpers do
   def pdf_combine(params)
-    params.each do |param|
-      puts param
-      # if param[:name].include? 'file' #&& !param[:filename].nil?
-      #   puts param[:name]
-      # end
+    params.keys.each do |key|
+      p = params[key]
+      if key.include? 'file' #&& !param[:filename].nil?
+        puts p
+      end
     end
   end
 
