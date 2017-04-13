@@ -25,6 +25,7 @@ GEM
     tilt (2.0.7)
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES
