@@ -10,7 +10,9 @@
   <body>
     <div class="wrapper">
       <header>
-        <a href='/img/self.jpg'><img id='profile' src='/img/self.jpg' /></a>
+        <% if defined?(onIndex) %>
+          <a href='/img/self.jpg'><img id='profile' src='/img/self.jpg' /></a>
+        <% end %>
         <h1><%= @@general_data['name'] %></h1>
         <p>
             <%= %(<a href="mailto:#{@@general_data['email']}">#{@@general_data['email']}</a>) %>

@@ -9,13 +9,13 @@ require './lib/helper_utils'
 @@num_uploads = 5
 
 configure do
- # set :environment, "production"
+  set :environment, "production"
 end
 
 helpers HelperUtils
 
 get '/' do 
-  erb :index
+  erb :index, :locals => {:onIndex => true}
 end
 
 get '/utils/pdf' do
@@ -27,6 +27,11 @@ post '/utils/pdf/combine' do
     @@num_uploads += 1
     redirect to('/utils/pdf')
   elsif params[:commit] == 'Submit'
-    @combined_pdf = pdf_combine params
+    pdf_combine params
+    send_file "public/uploads/merged.pdf"
   end
+end
+
+not_found do
+  'This location does not exist.'
 end
